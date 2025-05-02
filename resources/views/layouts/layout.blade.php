@@ -7,7 +7,7 @@
     <title>@yield('title')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans">
+<body class="font-sans overflow-x-hidden">
     <header class="w-full sticky flex flex-row justify-between py-2 px-12">
         <div class="flex flex-col">
             <a href="{{ route('home') }}"><img class="w-24" src="{{ asset('images/icon.png') }}" alt="logo"></a>
