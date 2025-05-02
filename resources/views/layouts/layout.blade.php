@@ -8,17 +8,17 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="font-sans">
-    <header class="w-full flex flex-row justify-between py-2 px-12">
+    <header class="w-full sticky flex flex-row justify-between py-2 px-12">
         <div class="flex flex-col">
             <a href="{{ route('home') }}"><img class="w-24" src="{{ asset('images/icon.png') }}" alt="logo"></a>
         </div>
         <nav class="flex flex-row place-items-center">
 
-            <div id="hamburger" class="flex flex-col space-y-1 md:hidden">
-                <span class="w-7 h-1 bg-black"></span>
-                <span class="w-7 h-1 bg-black"></span>
-                <span class="w-7 h-1 bg-black"></span>
-            </div>
+            <button id="hamburger-btn" class="flex md:hidden flex-col space-y-1">
+                <span class="block w-8 h-1 bg-black transition-all ease-in-out duration-500"></span>
+                <span class="block w-8 h-1 bg-black transition-all ease-in-out duration-500"></span>
+                <span class="block w-8 h-1 bg-black transition-all ease-in-out duration-500"></span>
+            </button>
 
             <div class="flex-row space-x-4 hidden md:flex">
                 <a href="#" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
@@ -30,6 +30,19 @@
                 <a href="#" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
                     Contact
                 </a>
+            </div>
+
+            <div id="mobile-menu" class="z-50 absolute top-30 pt-12 left-0 h-screen w-full bg-white text-black translate-x-[-150%] transition-all ease-in-out duration-500">
+                <div class="p-6 grid gap-y-8 bg-white">
+                    <div class="flex flex-col gap-4">
+                        <a class="relative group text-2xl font-bold"
+                           href="#">About me</a>
+                        <a class="relative group text-2xl font-bold"
+                           href="#">Portfolio</a>
+                        <a class="relative group text-2xl font-bold"
+                           href="#">Contact</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
