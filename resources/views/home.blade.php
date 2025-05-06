@@ -51,7 +51,7 @@
     </section>
     <section class="vid z-50 h-[600vh] relative">
         <div class="sticky top-0 hidden-animation w-full object-cover transition-all duration-700 flex flex-col place-items-center mb-[500px]">
-            <video class="min-h-[800px]" src="{{ asset('images/bg-video_1_1.mp4') }}" autoplay muted loop playsinline></video>
+            <video class="min-h-[800px]" src="{{ asset('images/20250502_135612000_iOS.MOV') }}" autoplay muted loop playsinline></video>
         </div>
         <div class="absolute font-light text-white w-full place-items-center text-center mt-[500px] p-4">
             <div class="h-[100vh] flex flex-col place-items-center">
