@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,7 @@
             </button>
 
             <div class="flex-row space-x-4 hidden md:flex">
-                <a href="#" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
-                    About
-                </a>
-                <a href="#" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
+                <a href="{{ route('portfolio') }}" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
                     Portfolio
                 </a>
                 <a href="#" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
@@ -36,11 +33,11 @@
                 <div class="p-6 grid gap-y-8 bg-white">
                     <div class="flex flex-col gap-4">
                         <a class="relative group text-2xl font-bold"
-                           href="#">About me</a>
+                           href="{{ route('portfolio') }}">Portfolio
+                        </a>
                         <a class="relative group text-2xl font-bold"
-                           href="#">Portfolio</a>
-                        <a class="relative group text-2xl font-bold"
-                           href="#">Contact</a>
+                           href="#">Contact
+                        </a>
                     </div>
                 </div>
             </div>

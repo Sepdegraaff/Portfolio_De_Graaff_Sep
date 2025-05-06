@@ -1,5 +1,7 @@
 @extends('layouts.layout')
 
+@section('title', 'Home')
+
 @section('content')
     <section class="flex flex-col">
         <div class="flex flex-col w-full place-items-center pb-12 text-black">
@@ -39,7 +41,7 @@
                         </p>
                     </div>
                     <div class="-z-[1] md:z-0 flex flex-col m-1 max-w-max hidden-animation transition-all duration-[1.5s]">
-                        <a class="relative hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0" href="#">Lees meer &rarr;</a>
+                        <a class="relative hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0" href="{{ route('portfolio') }}">Portfolio &rarr;</a>
                     </div>
                 </div>
                 <div class="flex flex-col justify-center place-items-center">
@@ -49,16 +51,16 @@
         </div>
         <span class="w-full h-0.5 bg-gray-100"></span>
     </section>
-    <section class="vid z-50 h-[600vh] relative">
-        <div class="sticky top-0 hidden-animation w-full object-cover transition-all duration-700 flex flex-col place-items-center mb-[500px]">
-            <video class="min-h-[800px]" src="{{ asset('images/20250502_135612000_iOS.MOV') }}" autoplay muted loop playsinline></video>
+    <section id="scroll-section-1" class="vid z-50 h-[600vh] relative">
+        <div class="sticky top-0 hidden-animation w-full object-cover transition-all duration-700 flex flex-col place-items-center mb-[500px] scale-up-on-scroll-1">
+            <img src="{{ asset('images/36.png') }}" alt="data-platgeslagen">
         </div>
-        <div class="absolute font-light text-white w-full place-items-center text-center mt-[500px] p-4">
+        <div class="absolute font-light text-black w-full place-items-center text-center mt-[500px] p-4">
             <div class="h-[100vh] flex flex-col place-items-center">
                 <div class="hidden-animation flex flex-col max-w-max transition-all duration-700">
-                    <h2 class="text-5xl font-bold md:text-7xl">
-                        Data-platgeslagen
-                    </h2>
+                    <a target="_blank" href="{{ url('https://data-platgeslagen.nl') }}" class="text-5xl font-bold md:text-7xl">
+                        data-platgeslagen.nl
+                    </a>
                     <span class="w-full h-1 bg-red-800 mt-2 ml-1"></span>
                 </div>
             </div>
@@ -66,6 +68,10 @@
                 <p class="hidden-animation transition-all duration-[1.5s] text-4xl md:max-w-[50%]">
                     Een webapplicatie gebouwd voor het A.I evenement van Hittra & Divtag.
                 </p>
+                <div class="grid grid-cols-2 mt-10 gap-4">
+                    <a target="_blank" href="{{ url('https://divtag.nl/') }}"><img src="{{ asset('images/divtag-logo.svg') }}" alt="divtag"></a>
+                    <a target="_blank" href="{{ url('https://hittra.eu/') }}"><img src="{{ asset('images/icon-hittra.svg') }}" alt="hittra"></a>
+                </div>
             </div>
             <div class="h-[100vh] flex flex-col place-items-center">
                 <p class="hidden-animation transition-all duration-[1.5s] text-4xl md:max-w-[50%]">
@@ -117,19 +123,5 @@
             </div>
         </div>
         <span class="w-full h-0.5 bg-gray-100"></span>
-    </section>
-    <section class="flex flex-col place-items-center">
-        <p>
-            hoi
-        </p>
-        <p>
-            hoi
-        </p>
-        <p>
-            hoi
-        </p>
-        <p>
-            hoi
-        </p>
     </section>
 @endsection
