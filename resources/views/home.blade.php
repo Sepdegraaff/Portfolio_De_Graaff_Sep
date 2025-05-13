@@ -3,19 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-    <section class="flex flex-col">
-        <div class="flex flex-col w-full place-items-center pb-12 text-black">
-            <div class="flex flex-col place-items-center p-4 md:p-12 gap-y-6">
-                <h1 class="text-5xl md:text-7xl hidden-animation transition-all duration-700">
-                    Sep de Graaff
-                </h1>
-                <p class="font-light italic hidden-animation transition-all duration-[1.5s]">
-                    Software developer
-                </p>
-            </div>
-            <span class="w-full h-0.5 bg-gray-100"></span>
-        </div>
-    </section>
+    @include('layouts.header')
     <section class="flex flex-col place-items-center m-auto">
         <div class="flex flex-col place-items-center px-4 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 p-4 md:max-w-[80%]">
@@ -40,7 +28,7 @@
                             In mijn <strong>portfolio</strong> vind je projecten waar ik <strong>trots</strong> op ben, van <strong>schoolopdrachten</strong> tot <strong>persoonlijke experimenten</strong>. Mijn doel is om door te groeien tot een <strong>professionele developer</strong> die meewerkt aan <strong>innovatieve en betrouwbare software</strong>.
                         </p>
                     </div>
-                    <div class="-z-[1] md:z-0 flex flex-col m-1 max-w-max hidden-animation transition-all duration-[1.5s]">
+                    <div class=" md:z-0 flex flex-col m-1 max-w-max hidden-animation transition-all duration-[1.5s]">
                         <a class="relative hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0" href="{{ route('portfolio') }}">Portfolio &rarr;</a>
                     </div>
                 </div>
@@ -53,6 +41,7 @@
     </section>
     <section id="scroll-section-1" class="vid z-50 h-[600vh] relative">
         <div class="sticky top-0 hidden-animation w-full object-cover transition-all duration-700 flex flex-col place-items-center mb-[500px] scale-up-on-scroll-1">
+            <div class="absolute w-full h-full inset-0 bg-black/30 z-[1]"></div>
             <img src="{{ asset('images/36.png') }}" alt="data-platgeslagen">
         </div>
         <div class="absolute font-light text-black w-full place-items-center text-center mt-[500px] p-4">
@@ -124,4 +113,7 @@
         </div>
         <span class="w-full h-0.5 bg-gray-100"></span>
     </section>
+    <div class="h-[100vh]">
+
+    </div>
 @endsection
