@@ -7,8 +7,6 @@ hamburgerBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('translate-x-[0]');
 
     hamburgerBtn.classList.toggle('open');
-
-    body.classList.toggle('overflow-hidden');
 });
 
 window.addEventListener('resize', () => {
@@ -16,6 +14,5 @@ window.addEventListener('resize', () => {
         mobileMenu.classList.add('translate-x-[-100%]');
         mobileMenu.classList.remove('translate-x-[0]');
         hamburgerBtn.classList.remove('open');
-        body.classList.remove('overflow-hidden');
     }
 });

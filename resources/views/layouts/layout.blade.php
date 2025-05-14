@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,8 +7,8 @@
     <title>@yield('title')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="font-sans overflow-x-hidden">
-    <header class="w-full bg-white z-10 h-full max-md:sticky top-0 flex flex-row justify-between py-4 px-12">
+<body class="font-sans relative">
+    <header class="w-full bg-white z-50 h-full max-md:sticky top-0 flex flex-row justify-between py-4 px-12">
         <div class="flex flex-col">
             <a href="{{ route('home') }}"><img class="w-24" src="{{ asset('images/icon.png') }}" alt="logo"></a>
         </div>
@@ -24,29 +24,29 @@
                 <a href="{{ route('portfolio') }}" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
                     Portfolio
                 </a>
-                <a href="#" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
+                <a href="{{ route('contact') }}" class="relative group hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0">
                     Contact
                 </a>
             </div>
 
-            <div id="mobile-menu" class="z-50 absolute top-24 pt-12 left-0 h-screen w-full bg-white text-black translate-x-[-150%] transition-all ease-in-out duration-500">
+            <div id="mobile-menu" class="z-50 absolute top-32 pt-12 left-0 h-screen w-full bg-white text-black translate-x-[-150%] transition-all ease-in-out duration-500">
                 <div class="p-6 grid gap-y-8 bg-white">
                     <div class="flex flex-col gap-4">
                         <a class="relative group text-2xl font-bold"
                            href="{{ route('portfolio') }}">Portfolio
                         </a>
                         <a class="relative group text-2xl font-bold"
-                           href="#">Contact
+                           href="{{ route('contact') }}">Contact
                         </a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="min-h-screen">
         @yield('content')
     </main>
-    <footer>
+    <footer class="absolute bottom-0 w-full">
         <div class="flex flex-col items-center justify-center w-full">
             <span class="w-full h-0.5 bg-gray-100"></span>
 

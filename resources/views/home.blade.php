@@ -39,7 +39,7 @@
         </div>
         <span class="w-full h-0.5 bg-gray-100"></span>
     </section>
-    <section id="scroll-section-1" class="vid z-50 h-[600vh] relative">
+    <section id="scroll-section-1" class="vid z-[49] h-[600vh] relative">
         <div class="sticky top-0 hidden-animation w-full object-cover transition-all duration-700 flex flex-col place-items-center mb-[500px] scale-up-on-scroll-1">
             <div class="absolute w-full h-full inset-0 bg-black/30 z-[1]"></div>
             <img src="{{ asset('images/36.png') }}" alt="data-platgeslagen">
@@ -72,48 +72,48 @@
                     Dit project is ontwikkeld met behulp van <strong>Laravel</strong> en <strong>Tailwind.css</strong>.
                 </p>
                 <div class="-z-[1] md:z-0 flex flex-col m-1 max-w-max hidden-animation transition-all duration-[1.5s]">
-                    <a class="relative hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0" href="#">Lees meer &rarr;</a>
+                    <a class="relative hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0" href="{{ route('portfolio') }}/#projects">Lees meer &rarr;</a>
                 </div>
             </div>
         </div>
         <span class="w-full h-0.5 bg-gray-100"></span>
     </section>
 
-    <section id="scroll-section-2" class="z-50 h-[600vh] relative">
-        <div class="hidden-animation scale-[2] md:scale-[1] transition-all duration-700 flex flex-col place-items-center p-12 sticky top-0 scale-up-on-scroll-2">
-            <img class="sticky min-h-[800px]" src="{{ asset('images/landscape-placeholder.svg') }}" alt="placeholder">
-        </div>
-        <div class="absolute w-full place-items-center text-center mt-[500px] mb-[2000px] p-4">
-            <div class="h-[100vh] flex flex-col place-items-center">
-                <div class="hidden-animation flex flex-col max-w-max transition-all duration-700">
-                    <h2 class="text-5xl md:text-7xl">
-                        Project 2
-                    </h2>
-                    <span class="w-full h-1 bg-red-800 mt-2 ml-1"></span>
-                </div>
-            </div>
-            <div class="h-[100vh] flex flex-col place-items-center">
-                <p class="hidden-animation transition-all duration-[1.5s] text-4xl md:max-w-[50%]">
-                    Een API gebaseerd systeem ontwikkeld voor online boekingsdiensten.
-                </p>
-            </div>
-            <div class="h-[100vh] flex flex-col place-items-center">
-                <p class="hidden-animation transition-all duration-[1.5s] text-4xl md:max-w-[50%]">
-                    Hiermee kunnen klanten afspraken maken, services selecteren en betalingen beheren.
-                </p>
-            </div>
-            <div class="h-[100vh] flex flex-col place-items-center">
-                <p class="hidden-animation transition-all duration-[1.5s] text-4xl md:max-w-[50%]">
-                    De backend is gebouwd met <strong>Node.js</strong> en <strong>MySQL</strong>.
-                </p>
-                <div class="-z-[1] md:z-0 flex flex-col m-1 max-w-max hidden-animation transition-all duration-[1.5s]">
-                    <a class="relative hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0" href="#">Lees meer &rarr;</a>
-                </div>
-            </div>
-        </div>
-        <span class="w-full h-0.5 bg-gray-100"></span>
-    </section>
-    <div class="h-[100vh]">
+{{--    <section id="scroll-section-2" class="z-[49] h-[600vh] relative">--}}
+{{--        <div class="hidden-animation scale-[2] md:scale-[1] transition-all duration-700 flex flex-col place-items-center p-12 sticky top-0 scale-up-on-scroll-2">--}}
+{{--            <img class="sticky min-h-[800px]" src="{{ asset('images/landscape-placeholder.svg') }}" alt="placeholder">--}}
+{{--        </div>--}}
+{{--        <div class="absolute w-full place-items-center text-center mt-[500px] mb-[2000px] p-4">--}}
+{{--            <div class="h-[100vh] flex flex-col place-items-center">--}}
+{{--                <div class="hidden-animation flex flex-col max-w-max transition-all duration-700">--}}
+{{--                    <h2 class="text-5xl md:text-7xl">--}}
+{{--                        Project 2--}}
+{{--                    </h2>--}}
+{{--                    <span class="w-full h-1 bg-red-800 mt-2 ml-1"></span>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="h-[100vh] flex flex-col place-items-center">--}}
+{{--                <p class="hidden-animation transition-all duration-[1.5s] text-4xl md:max-w-[50%]">--}}
+{{--                    Een API gebaseerd systeem ontwikkeld voor online boekingsdiensten.--}}
+{{--                </p>--}}
+{{--            </div>--}}
+{{--            <div class="h-[100vh] flex flex-col place-items-center">--}}
+{{--                <p class="hidden-animation transition-all duration-[1.5s] text-4xl md:max-w-[50%]">--}}
+{{--                    Hiermee kunnen klanten afspraken maken, services selecteren en betalingen beheren.--}}
+{{--                </p>--}}
+{{--            </div>--}}
+{{--            <div class="h-[100vh] flex flex-col place-items-center">--}}
+{{--                <p class="hidden-animation transition-all duration-[1.5s] text-4xl md:max-w-[50%]">--}}
+{{--                    De backend is gebouwd met <strong>Node.js</strong> en <strong>MySQL</strong>.--}}
+{{--                </p>--}}
+{{--                <div class="-z-[1] md:z-0 flex flex-col m-1 max-w-max hidden-animation transition-all duration-[1.5s]">--}}
+{{--                    <a class="relative hover:text-red-800 transition-all ease-in-out duration-500 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-0.5 before:bg-red-800 before:transition-all before:duration-500 before:ease-in-out hover:before:w-full hover:before:left-0" href="#">Lees meer &rarr;</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <span class="w-full h-0.5 bg-gray-100"></span>--}}
+{{--    </section>--}}
+    <div class="h-[30vh]">
 
     </div>
 @endsection

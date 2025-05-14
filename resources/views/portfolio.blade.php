@@ -14,7 +14,7 @@
             </p>
         </div>
     </section>
-    <div class="absolute overflow-x-hidden z-50 font-light text-black w-full place-items-center text-center mt-[1000px] p-4">
+    <div class="absolute overflow-x-hidden z-[49] font-light text-black w-full place-items-center text-center mt-[1000px] p-4">
         <div class="h-[100vh] flex flex-col place-items-center">
             <div class="hidden-animation flex flex-col max-w-max transition-all duration-700">
                 <h2 class="text-5xl font-light md:text-7xl">
@@ -196,7 +196,7 @@
         </div>
     </section>
     <div class="h-[100vh]"></div>
-    <div class="absolute overflow-x-hidden z-50 font-light text-black w-full place-items-center text-center mt-[1000px] p-4">
+    <div class="absolute overflow-x-hidden z-[49] font-light text-black w-full place-items-center text-center mt-[1000px] p-4">
         <div class="h-[100vh] flex flex-col place-items-center">
             <div class="hidden-animation flex flex-col max-w-max transition-all duration-700">
                 <h2 class="text-5xl font-light md:text-7xl">
@@ -234,51 +234,38 @@
         <div class="scale-up-on-scroll-12 w-[50vh] h-[30vh] bg-white sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
     <div class="h-[100vh]"></div>
-    <section class="py-12">
-        <div class="relative w-full overflow-hidden">
+    <section id="projects" class="py-12 overflow-hidden">
+        <div class="relative w-full ">
             <div class="relative h-screen w-full flex items-center justify-center">
-                <div class="mySlide absolute inset-0 items-center justify-center transition-transform duration-500 ease-in-out opacity-0 translate-x-full z-0">
-                    <div class="p-6 shadow-sm rounded-xl flex flex-col sm:flex-row gap-6 w-full max-w-6xl h-full sm:h-auto items-center justify-center">
-                        <div class="flex-1 flex items-center justify-center">
-                            <img src="{{ asset('images/landscape-placeholder.svg') }}" alt="placeholder" class="w-full max-w-[500px] object-contain">
+                <div class="mySlide absolute inset-0 items-center justify-center transition-transform duration-700 ease-in-out opacity-0 translate-x-full z-0">
+                    <div class="p-6 shadow-sm rounded-xl flex flex-col sm:flex-row gap-6 w-full max-w-6xl min-h-max justify-center">
+                        <div class="flex flex-col">
+                            <img src="{{ asset('images/logger-package.png') }}" alt="logger-package" class="min-w-full md:min-h-[500px] max-w-[500px] object-contain">
                         </div>
-                        <div class="flex-1 text-center sm:text-left">
-                            <h2 class="text-3xl sm:text-5xl mb-4">Project 1</h2>
-                            <p class="text-lg font-light sm:text-xl">This is your first project description with an expanded layout and dynamic scaling.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mySlide absolute inset-0 items-center justify-center transition-transform duration-500 ease-in-out opacity-0 translate-x-full z-0">
-                    <div class="p-6 shadow-sm rounded-xl flex flex-col sm:flex-row gap-6 w-full max-w-6xl h-full sm:h-auto items-center justify-center">
-                        <div class="flex-1 flex items-center justify-center">
-                            <img src="{{ asset('images/landscape-placeholder.svg') }}" alt="placeholder" class="w-full max-w-[500px] object-contain">
-                        </div>
-                        <div class="flex-1 text-center sm:text-left">
-                            <h2 class="text-3xl sm:text-5xl mb-4">Project 2</h2>
-                            <p class="text-lg font-light sm:text-xl">This is your first project description with an expanded layout and dynamic scaling.</p>
+                        <div class="flex flex-col text-center sm:text-left hidden-animation transition-all duration-700">
+                            <h2 class="text-3xl sm:text-5xl mb-4">Logger package</h2>
+                            <p class="hidden-animation transition-all duration-[1.5s] text-lg font-light sm:text-xl">Hier heb ik een PHP-logger package gecreeërd op basis van PSR-13 standaard. Met deze package kun je gemakkelijk foutmeldingen loggen naar verschillende middelen zoals: een log bestand, slack en kun je het zelf gemakkeijk uitbreiden voor je eigen doeleinde</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="mySlide absolute inset-0 items-center justify-center transition-transform duration-500 ease-in-out opacity-0 translate-x-full z-0">
-                    <div class="p-6 shadow-sm rounded-xl flex flex-col sm:flex-row gap-6 w-full max-w-6xl h-full sm:h-auto items-center justify-center">
-                        <div class="flex-1 flex items-center justify-center">
-                            <img src="{{ asset('images/landscape-placeholder.svg') }}" alt="placeholder" class="w-full max-w-[500px] object-contain">
+                <div class="mySlide absolute inset-0 items-center justify-center transition-transform duration-700 ease-in-out opacity-0 translate-x-full z-0">
+                    <div class="p-6 shadow-sm rounded-xl flex flex-col sm:flex-row gap-6 w-full max-w-6xl min-h-max justify-center">
+                        <div class="flex flex-col ">
+                            <img src="{{ asset('images/data-platgeslagen-2.png') }}" alt="data-platgeslagen" class="min-w-full md:min-h-[500px] max-w-[500px] object-contain">
                         </div>
-                        <div class="flex-1 text-center sm:text-left">
-                            <h2 class="text-3xl sm:text-5xl mb-4">Project 3</h2>
-                            <p class="text-lg font-light sm:text-xl">This is your first project description with an expanded layout and dynamic scaling.</p>
+                        <div class="flex flex-col text-center sm:text-left hidden-animation transition-all duration-700">
+                            <h2 class="text-3xl sm:text-5xl mb-4">data-platgeslagen.nl</h2>
+                            <p class="hidden-animation transition-all duration-[1.5s] text-lg font-light sm:text-xl">Dit project was gemaakt voor het bedrijf Divtag om aanmeldingen op te slaan en voor gebruikers om informatie te krijgen over hun evenement. In dit project zaten functies zoals: API connecties met mailchimp, Magic login en creative styling</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Navigation buttons -->
-            <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 p-3 rounded-full shadow-md z-20">
+            <button id="prevBtn" class="absolute h-max left-4 bottom-0 mb-12 md:top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 py-2 px-3.5 rounded-full shadow-md z-20 cursor-pointer">
                 &#10094;
             </button>
-            <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 p-3 rounded-full shadow-md z-20">
+            <button id="nextBtn" class="absolute h-max right-4 bottom-0 mb-12 md:top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 py-2 px-3.5 rounded-full shadow-md z-20 cursor-pointer">
                 &#10095;
             </button>
         </div>
