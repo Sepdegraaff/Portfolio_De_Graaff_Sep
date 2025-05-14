@@ -6,7 +6,7 @@
     @include('layouts.header')
     <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="flex flex-col gap-4 items-center hidden-animation transition-all duration-700">
-            <img class="object-contain max-w-[500px] min-h-full" src="{{ asset('images/landscape-placeholder.svg') }}" alt="placeholder">
+            <img class="object-contain max-w-[500px] min-h-full" src="{{ asset('images/Profile_Picture.png') }}" alt="face">
         </div>
         <div class="hidden-animation flex flex-col gap-4 transition-all duration-700">
             <h2 class="text-5xl">
