@@ -37,9 +37,9 @@
                 </div>
             </div>
         </div>
-        <span class="w-full h-0.5 bg-gray-100"></span>
+        <span class="hidden md:flex w-full h-0.5 bg-gray-100"></span>
     </section>
-    <section id="scroll-section-1" class="vid z-[49] h-[600vh] relative">
+    <section id="scroll-section-1" class="vid hidden md:block z-[49] h-[600vh] relative">
         <div class="sticky top-0 hidden-animation w-full object-cover transition-all duration-700 flex flex-col place-items-center mb-[500px] scale-up-on-scroll-1">
             <div class="absolute w-full h-full inset-0 bg-black/30 z-[1]"></div>
             <img src="{{ asset('images/36.png') }}" alt="data-platgeslagen">

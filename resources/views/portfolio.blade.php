@@ -4,7 +4,7 @@
 
 @section('content')
     @include('layouts.header')
-    <section class="flex flex-col py-24">
+    <section class="flex-col py-24 hidden md:flex">
         <div class="flex flex-col place-items-center mb-[1000px] gap-4">
             <h1 class="hidden-animation text-5xl font-bold text-cente transition-all duration-700">
                 Begin hier <a href="#scroll-section-3">&downarrow;</a>
@@ -14,7 +14,7 @@
             </p>
         </div>
     </section>
-    <div class="absolute overflow-x-hidden z-[49] font-light text-black w-full place-items-center text-center mt-[1000px] p-4">
+    <div class="absolute hidden md:block overflow-x-hidden z-[49] font-light text-black w-full place-items-center text-center mt-[1000px] p-4">
         <div class="h-[100vh] flex flex-col place-items-center">
             <div class="hidden-animation flex flex-col max-w-max transition-all duration-700">
                 <h2 class="text-5xl font-light md:text-7xl">
@@ -39,19 +39,19 @@
             </p>
         </div>
     </div>
-    <section id="scroll-section-3" class="relative h-[150vh]">
+    <section id="scroll-section-3" class="hidden md:block relative h-[150vh]">
         <div class="scale-up-on-scroll-3 w-[50vh] h-[50vh] bg-gray-500 sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
-    <section id="scroll-section-4" class="relative h-[150vh]">
+    <section id="scroll-section-4" class="hidden md:block relative h-[150vh]">
         <div class="scale-up-on-scroll-4 w-[50vh] h-[50vh] bg-gray-400 sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
-    <section id="scroll-section-5" class="relative h-[150vh]">
+    <section id="scroll-section-5" class="hidden md:block relative h-[150vh]">
         <div class="scale-up-on-scroll-5 w-[50vh] h-[40vh] bg-gray-300 sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
-    <section id="scroll-section-6" class="relative h-[20vh]">
+    <section id="scroll-section-6" class="hidden md:block relative h-[20vh]">
         <div class="scale-up-on-scroll-6 w-[50vh] h-[30vh] bg-white sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
-    <section id="scroll-section-7" class="flex flex-col mt-[300px] relative w-full place-items-end h-[300vh]">
+    <section id="scroll-section-7" class="hidden md:flex flex-col mt-[300px] relative w-full place-items-end h-[300vh]">
         <div class="hidden-animation scale-[1] transition-all duration-700 flex flex-col place-items-center md:p-12 sticky top-0 scale-up-on-scroll-7">
             <img class="sticky min-h-[800px] hidden md:block" src="{{ asset('images/maxserv.jpg') }}" alt="maxserv">
         </div>
@@ -82,7 +82,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col mt-[500px] px-4 py-24 m-auto">
+    <section class="flex flex-col md:mt-[500px] px-4 py-24 m-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 m-auto max-w-[90%] place-items-center">
             <div class="hidden-animation flex flex-col place-items-center transition-all duration-700">
                 <img src="{{ asset('images/maxserv-1.png') }}" alt="maxserv">
@@ -121,7 +121,7 @@
             </div>
         </div>
     </section>
-    <section id="scroll-section-8" class="flex flex-col mt-[300px] relative w-full place-items-end h-[300vh]">
+    <section id="scroll-section-8" class="hidden md:flex flex-col mt-[300px] relative w-full place-items-end h-[300vh]">
         <div class="hidden-animation scale-[1] transition-all duration-700 flex flex-col place-items-center md:p-12 sticky top-0 scale-up-on-scroll-8">
             <img class="sticky min-h-[800px] hidden md:block" src="{{ asset('images/divtag.jpg') }}" alt="divtag">
         </div>
@@ -156,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col mt-[700px] px-4 py-24 m-auto">
+    <section class="flex flex-col md:mt-[700px] px-4 py-24 m-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 m-auto max-w-[90%] place-items-center">
             <div class="hidden-animation flex flex-col place-items-center transition-all duration-700">
                 <img src="{{ asset('images/divtag-logo-full.svg') }}" alt="divtag">
@@ -195,8 +195,8 @@
             </div>
         </div>
     </section>
-    <div class="h-[100vh]"></div>
-    <div class="absolute overflow-x-hidden z-[49] font-light text-black w-full place-items-center text-center mt-[1000px] p-4">
+    <div class="hidden md:block h-[100vh]"></div>
+    <div class="hidden md:block absolute overflow-x-hidden z-[49] font-light text-black w-full place-items-center text-center mt-[1000px] p-4">
         <div class="h-[100vh] flex flex-col place-items-center">
             <div class="hidden-animation flex flex-col max-w-max transition-all duration-700">
                 <h2 class="text-5xl font-light md:text-7xl">
@@ -221,21 +221,21 @@
             </p>
         </div>
     </div>
-    <section id="scroll-section-9" class="relative h-[150vh]">
+    <section id="scroll-section-9" class="hidden md:block relative h-[150vh]">
         <div class="scale-up-on-scroll-9 w-[50vh] h-[50vh] bg-gray-500 sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
-    <section id="scroll-section-10" class="relative h-[150vh]">
+    <section id="scroll-section-10" class="hidden md:block relative h-[150vh]">
         <div class="scale-up-on-scroll-10 w-[50vh] h-[50vh] bg-gray-400 sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
-    <section id="scroll-section-11" class="relative h-[150vh]">
+    <section id="scroll-section-11" class="hidden md:block relative h-[150vh]">
         <div class="scale-up-on-scroll-11 w-[50vh] h-[40vh] bg-gray-300 sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
-    <section id="scroll-section-12" class="relative h-[20vh]">
+    <section id="scroll-section-12" class="hidden md:block relative h-[20vh]">
         <div class="scale-up-on-scroll-12 w-[50vh] h-[30vh] bg-white sticky top-0 place-self-center transition-all duration-300 ease-in-out"></div>
     </section>
-    <div class="h-[100vh]"></div>
-    <section id="projects" class="py-12 overflow-hidden">
-        <div class="relative w-full ">
+    <div class="hidden md:block h-[100vh]"></div>
+    <section id="projects" class="pb-[100px] py-12 overflow-hidden">
+        <div class="relative w-full">
             <div class="relative h-screen w-full flex items-center justify-center">
                 <div class="mySlide absolute inset-0 items-center justify-center transition-transform duration-700 ease-in-out opacity-0 translate-x-full z-0">
                     <div class="p-6 shadow-sm rounded-xl flex flex-col sm:flex-row gap-6 w-full max-w-6xl min-h-max justify-center">
@@ -261,11 +261,11 @@
                     </div>
                 </div>
             </div>
-
-            <button id="prevBtn" class="absolute h-max left-4 bottom-0 mb-12 md:top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 py-2 px-3.5 rounded-full shadow-md z-20 cursor-pointer">
+            <div class="m-24"></div>
+            <button id="prevBtn" class="absolute  h-max left-4 -bottom-12 md:top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 py-2 px-3.5 rounded-full shadow-md z-20 cursor-pointer">
                 &#10094;
             </button>
-            <button id="nextBtn" class="absolute h-max right-4 bottom-0 mb-12 md:top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 py-2 px-3.5 rounded-full shadow-md z-20 cursor-pointer">
+            <button id="nextBtn" class="absolute h-max right-4 -bottom-12 md:top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 py-2 px-3.5 rounded-full shadow-md z-20 cursor-pointer">
                 &#10095;
             </button>
         </div>
