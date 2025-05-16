@@ -113,7 +113,7 @@
 {{--        </div>--}}
 {{--        <span class="w-full h-0.5 bg-gray-100"></span>--}}
 {{--    </section>--}}
-    <div class="h-[30vh]">
+    <div class="h-[100vh]">
 
     </div>
 @endsection
