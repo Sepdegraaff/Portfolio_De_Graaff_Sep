@@ -260,6 +260,18 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="mySlide absolute inset-0 items-center justify-center transition-transform duration-700 ease-in-out opacity-0 translate-x-full z-0">
+                    <div class="p-6 shadow-sm rounded-xl flex flex-col sm:flex-row gap-6 w-full max-w-6xl min-h-max justify-center">
+                        <div class="flex flex-col ">
+                            <img src="{{ asset('images/hourbridge.png') }}" alt="hourbridge" class="min-w-full md:min-h-[500px] max-w-[500px] object-contain">
+                        </div>
+                        <div class="flex flex-col text-center sm:text-left hidden-animation transition-all duration-700">
+                            <h2 class="text-3xl sm:text-5xl mb-4">SLA Rapportage (Hourbridge extenstion)</h2>
+                            <p class="hidden-animation transition-all duration-[1.5s] text-lg font-light sm:text-xl">Dit project voor het bedrijf Divtag is gemaakt op erg makkelijk via een zelf gemaakte PDF editor SLA rapportage te creeën. Dit maakt het proces erg makkelijk sinds je niet meer elke ticket apart moet opzoeken en uitschrijven. Nu worden de tickets automatisch ingeladen in een tabel en moet je alleen de bijzonderheden nog invullen.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="m-24"></div>
             <button id="prevBtn" class="absolute  h-max left-4 -bottom-12 md:top-1/2 transform -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-gray-800 py-2 px-3.5 rounded-full shadow-md z-20 cursor-pointer">
