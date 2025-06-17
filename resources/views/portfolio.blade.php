@@ -268,7 +268,7 @@
                         </div>
                         <div class="flex flex-col text-center sm:text-left hidden-animation transition-all duration-700">
                             <h2 class="text-3xl sm:text-5xl mb-4">SLA Rapportage (Hourbridge extenstion)</h2>
-                            <p class="hidden-animation transition-all duration-[1.5s] text-lg font-light sm:text-xl">Dit project voor het bedrijf Divtag is gemaakt op erg makkelijk via een zelf gemaakte PDF editor SLA rapportage te creeën. Dit maakt het proces erg makkelijk sinds je niet meer elke ticket apart moet opzoeken en uitschrijven. Nu worden de tickets automatisch ingeladen in een tabel en moet je alleen de bijzonderheden nog invullen.</p>
+                            <p class="hidden-animation transition-all duration-[1.5s] text-lg font-light sm:text-xl">Dit project voor het bedrijf Divtag is gemaakt om erg makkelijk via een zelf gemaakte PDF editor SLA rapportage te creeën. Dit maakt het proces erg makkelijk sinds je niet meer elke ticket apart moet opzoeken en uitschrijven. Nu worden de tickets automatisch ingeladen in een tabel en moet je alleen de bijzonderheden nog invullen.</p>
                         </div>
                     </div>
                 </div>
